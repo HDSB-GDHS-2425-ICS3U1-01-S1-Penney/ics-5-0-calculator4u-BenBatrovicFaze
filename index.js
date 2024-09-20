@@ -1,3 +1,7 @@
+// Name: Alex Toutrakanov
+// Date: 9/20/2024
+// Mr. Penny
+
 // Function to add two numbers
 function add(a, b) {
     return a + b;
@@ -25,7 +29,6 @@ function divide(a, b) {
 function calculator() {
     let userchoice = prompt("Choose an operation: Add, Subtract, Multiply, or Divide")
 
-    // Check if operation is valid
     if (userchoice === 'add' || userchoice === 'subtract' || userchoice === 'multiply' || userchoice === 'divide') {
         const num1 = parseFloat
         (prompt("Enter a number below:"));
@@ -34,7 +37,7 @@ function calculator() {
 
         let result;
 
-        // Do the calculation based on what the user imputs
+        // Do the calculation based on what the user chose
         if (userchoice === 'add') {
             result = add(num1, num2);
         } else if (userchoice === 'subtract') {
@@ -51,5 +54,5 @@ function calculator() {
     }
 }
 
-// Start the calculator
+// Start
 calculator();
